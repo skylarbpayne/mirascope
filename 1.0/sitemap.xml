@@ -2,587 +2,587 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.mirascope.io/latest/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/CHANGELOG/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/CONTRIBUTING/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/HELP/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/MIGRATE/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/WHY/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/anthropic/call/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/anthropic/call_params/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/anthropic/call_response/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/anthropic/call_response_chunk/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/anthropic/dynamic_config/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/anthropic/stream/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/anthropic/tool/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/call_factory/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/call_params/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/call_response/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/call_response_chunk/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/dynamic_config/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/message_param/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/metadata/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/prompt/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/stream/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/structured_stream/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/tool/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/base/toolkit/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/cohere/call/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/cohere/call_params/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/cohere/call_response/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/cohere/call_response_chunk/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/cohere/dynamic_config/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/cohere/stream/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/cohere/tool/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/gemini/call/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/gemini/call_params/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/gemini/call_response/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/gemini/call_response_chunk/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/gemini/dynamic_config/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/gemini/stream/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/gemini/tool/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/groq/call/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/groq/call_params/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/groq/call_response/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/groq/call_response_chunk/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/groq/dynamic_config/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/groq/stream/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/groq/tool/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/litellm/call/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/mistral/call/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/mistral/call_params/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/mistral/call_response/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/mistral/call_response_chunk/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/mistral/dynamic_config/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/mistral/stream/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/mistral/tool/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/openai/call/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/openai/call_params/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/openai/call_response/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/openai/call_response_chunk/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/openai/dynamic_config/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/openai/stream/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/core/openai/tool/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/integrations/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/integrations/langfuse/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/integrations/logfire/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/integrations/middleware/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/integrations/otel/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/api/integrations/tenacity/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/code_generation_and_execution/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/document_segmentation/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/extract_from_pdf/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/extraction_using_vision/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/generating_captions/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/generating_synthetic_data/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/knowledge_graph/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/llm_validation_with_retries/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/pii_scrubbing/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/query_plan/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/removing_semantic_duplicates/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/search_with_sources/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/speech_transcription/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/support_ticket_routing/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/text_classification/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/text_summarization/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/agents/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/agents/blog_writing_agent/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/agents/generating_sql_agent/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/agents/local_chat_with_codebase/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/agents/localized_agent/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/agents/web_search_agent/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/prompt_engineering/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/prompt_engineering/chaining_based/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/prompt_engineering/text_based/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/cookbook/prompt_engineering/text_based/self_ask/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/integrations/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/integrations/custom_provider/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/integrations/hyperdx/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/integrations/langfuse/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/integrations/logfire/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/integrations/middleware/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/integrations/otel/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/integrations/tenacity/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/agents/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/async/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/calls/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/chaining/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/dynamic_configuration/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/evals/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/json_mode/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/output_parsers/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/prompts/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/response_models/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/streams/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.mirascope.io/latest/learn/tools/</loc>
-         <lastmod>2024-08-19</lastmod>
+         <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
