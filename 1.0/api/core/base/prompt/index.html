@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.32">
     
     <meta name="keywords" content="prompt engineering, prompt management, LLM, AI">
     <meta name="robots" content="index, follow">
@@ -946,6 +946,8 @@
       
         
       
+        
+      
     
     
       
@@ -1657,6 +1659,91 @@
   
   <span class="md-ellipsis">
     Chaining Based
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_20" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../cookbook/langgraph_vs_mirascope/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    LangGraph vs. Mirascope
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_20" id="__nav_3_20_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_20">
+            <span class="md-nav__icon md-icon"></span>
+            LangGraph vs. Mirascope
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cookbook/langgraph_vs_mirascope/quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
   </span>
   
 
@@ -4217,19 +4304,19 @@ work across various providers by providing a common prompt interface.</p>
 
             <details class="quote">
               <summary>Source code in <code>mirascope/core/base/prompt.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-80">80</a></span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-77">77</a></span>
+<span class="normal"><a href="#__codelineno-0-78">78</a></span>
+<span class="normal"><a href="#__codelineno-0-79">79</a></span>
+<span class="normal"><a href="#__codelineno-0-80">80</a></span>
 <span class="normal"><a href="#__codelineno-0-81">81</a></span>
 <span class="normal"><a href="#__codelineno-0-82">82</a></span>
-<span class="normal"><a href="#__codelineno-0-83">83</a></span>
-<span class="normal"><a href="#__codelineno-0-84">84</a></span>
-<span class="normal"><a href="#__codelineno-0-85">85</a></span>
-<span class="normal"><a href="#__codelineno-0-86">86</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-80" name="__codelineno-0-80"></a><span class="k">def</span> <span class="nf">message_params</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">BaseMessageParam</span><span class="p">]:</span>
-<a id="__codelineno-0-81" name="__codelineno-0-81"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the list of parsed message parameters.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-82" name="__codelineno-0-82"></a>    <span class="k">return</span> <span class="n">parse_prompt_messages</span><span class="p">(</span>
-<a id="__codelineno-0-83" name="__codelineno-0-83"></a>        <span class="n">roles</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;assistant&quot;</span><span class="p">],</span>
-<a id="__codelineno-0-84" name="__codelineno-0-84"></a>        <span class="n">template</span><span class="o">=</span><span class="n">get_prompt_template</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span>
-<a id="__codelineno-0-85" name="__codelineno-0-85"></a>        <span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="n">field</span><span class="p">:</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">)</span> <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">model_fields</span><span class="p">},</span>
-<a id="__codelineno-0-86" name="__codelineno-0-86"></a>    <span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-83">83</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-77" name="__codelineno-0-77"></a><span class="k">def</span> <span class="nf">message_params</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">BaseMessageParam</span><span class="p">]:</span>
+<a id="__codelineno-0-78" name="__codelineno-0-78"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the list of parsed message parameters.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-79" name="__codelineno-0-79"></a>    <span class="k">return</span> <span class="n">parse_prompt_messages</span><span class="p">(</span>
+<a id="__codelineno-0-80" name="__codelineno-0-80"></a>        <span class="n">roles</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;assistant&quot;</span><span class="p">],</span>
+<a id="__codelineno-0-81" name="__codelineno-0-81"></a>        <span class="n">template</span><span class="o">=</span><span class="n">get_prompt_template</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span>
+<a id="__codelineno-0-82" name="__codelineno-0-82"></a>        <span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="n">field</span><span class="p">:</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">)</span> <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">model_fields</span><span class="p">},</span>
+<a id="__codelineno-0-83" name="__codelineno-0-83"></a>    <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -4253,11 +4340,11 @@ work across various providers by providing a common prompt interface.</p>
 
             <details class="quote">
               <summary>Source code in <code>mirascope/core/base/prompt.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-88">88</a></span>
-<span class="normal"><a href="#__codelineno-0-89">89</a></span>
-<span class="normal"><a href="#__codelineno-0-90">90</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-88" name="__codelineno-0-88"></a><span class="k">def</span> <span class="nf">dynamic_config</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BaseDynamicConfig</span><span class="p">:</span>
-<a id="__codelineno-0-89" name="__codelineno-0-89"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the dynamic config of the prompt.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-90" name="__codelineno-0-90"></a>    <span class="k">return</span> <span class="kc">None</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-85">85</a></span>
+<span class="normal"><a href="#__codelineno-0-86">86</a></span>
+<span class="normal"><a href="#__codelineno-0-87">87</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-85" name="__codelineno-0-85"></a><span class="k">def</span> <span class="nf">dynamic_config</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BaseDynamicConfig</span><span class="p">:</span>
+<a id="__codelineno-0-86" name="__codelineno-0-86"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the dynamic config of the prompt.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-87" name="__codelineno-0-87"></a>    <span class="k">return</span> <span class="kc">None</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -4281,21 +4368,21 @@ work across various providers by providing a common prompt interface.</p>
 
             <details class="quote">
               <summary>Source code in <code>mirascope/core/base/prompt.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-92">92</a></span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-89">89</a></span>
+<span class="normal"><a href="#__codelineno-0-90">90</a></span>
+<span class="normal"><a href="#__codelineno-0-91">91</a></span>
+<span class="normal"><a href="#__codelineno-0-92">92</a></span>
 <span class="normal"><a href="#__codelineno-0-93">93</a></span>
 <span class="normal"><a href="#__codelineno-0-94">94</a></span>
 <span class="normal"><a href="#__codelineno-0-95">95</a></span>
-<span class="normal"><a href="#__codelineno-0-96">96</a></span>
-<span class="normal"><a href="#__codelineno-0-97">97</a></span>
-<span class="normal"><a href="#__codelineno-0-98">98</a></span>
-<span class="normal"><a href="#__codelineno-0-99">99</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-92" name="__codelineno-0-92"></a><span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
-<a id="__codelineno-0-93" name="__codelineno-0-93"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Dumps the contents of the prompt into a dictionary.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-94" name="__codelineno-0-94"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-0-95" name="__codelineno-0-95"></a>        <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="n">get_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<a id="__codelineno-0-96" name="__codelineno-0-96"></a>        <span class="s2">&quot;prompt&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span>
-<a id="__codelineno-0-97" name="__codelineno-0-97"></a>        <span class="s2">&quot;template&quot;</span><span class="p">:</span> <span class="n">get_prompt_template</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span>
-<a id="__codelineno-0-98" name="__codelineno-0-98"></a>        <span class="s2">&quot;inputs&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(),</span>
-<a id="__codelineno-0-99" name="__codelineno-0-99"></a>    <span class="p">}</span>
+<span class="normal"><a href="#__codelineno-0-96">96</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-89" name="__codelineno-0-89"></a><span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a id="__codelineno-0-90" name="__codelineno-0-90"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Dumps the contents of the prompt into a dictionary.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-91" name="__codelineno-0-91"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-0-92" name="__codelineno-0-92"></a>        <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="n">get_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<a id="__codelineno-0-93" name="__codelineno-0-93"></a>        <span class="s2">&quot;prompt&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span>
+<a id="__codelineno-0-94" name="__codelineno-0-94"></a>        <span class="s2">&quot;template&quot;</span><span class="p">:</span> <span class="n">get_prompt_template</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span>
+<a id="__codelineno-0-95" name="__codelineno-0-95"></a>        <span class="s2">&quot;inputs&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">model_dump</span><span class="p">(),</span>
+<a id="__codelineno-0-96" name="__codelineno-0-96"></a>    <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -4312,29 +4399,29 @@ work across various providers by providing a common prompt interface.</p>
 <a href="#mirascope.core.base.prompt.BasePrompt.run" class="headerlink" title="Permanent link">&para;</a></h3>
 <div class="doc-signature highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">run</span><span class="p">(</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">call_decorator</span><span class="p">:</span> <span class="p">(</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]],</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>            <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><span title="mirascope.core.base.prompt._BaseCallResponseT">_BaseCallResponseT</span></span><span class="p">],</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]],</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>            <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><span title="mirascope.core.base.prompt._BaseCallResponseT">_BaseCallResponseT</span></span><span class="p">],</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="p">]</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]],</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><span title="mirascope.core.base.prompt._BaseStreamT">_BaseStreamT</span></span><span class="p">],</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]],</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><span title="mirascope.core.base.prompt._BaseStreamT">_BaseStreamT</span></span><span class="p">],</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="p">]</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]],</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">],</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]],</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">],</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="p">]</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]],</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Iterable" href="https://docs.python.org/3/library/typing.html#typing.Iterable">Iterable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]],</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]],</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Iterable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable">Iterable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]],</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        <span class="p">]</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="p">),</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="o">*</span><span class="n">additional_decorators</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[[</span><span class="n"><span title="mirascope.core.base.prompt._T">_T</span></span><span class="p">],</span> <span class="n"><span title="mirascope.core.base.prompt._T">_T</span></span><span class="p">]</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="o">*</span><span class="n">additional_decorators</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[[</span><span class="n"><span title="mirascope.core.base.prompt._T">_T</span></span><span class="p">],</span> <span class="n"><span title="mirascope.core.base.prompt._T">_T</span></span><span class="p">]</span>
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="n"><span title="mirascope.core.base.prompt._BaseCallResponseT">_BaseCallResponseT</span></span>
 <a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="o">|</span> <span class="n"><span title="mirascope.core.base.prompt._BaseStreamT">_BaseStreamT</span></span>
 <a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="o">|</span> <span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Iterable" href="https://docs.python.org/3/library/typing.html#typing.Iterable">Iterable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Iterable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable">Iterable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="p">)</span>
 </code></pre></div>
 
@@ -4361,7 +4448,10 @@ work across various providers by providing a common prompt interface.</p>
 
             <details class="quote">
               <summary>Source code in <code>mirascope/core/base/prompt.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-138">138</a></span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-135">135</a></span>
+<span class="normal"><a href="#__codelineno-0-136">136</a></span>
+<span class="normal"><a href="#__codelineno-0-137">137</a></span>
+<span class="normal"><a href="#__codelineno-0-138">138</a></span>
 <span class="normal"><a href="#__codelineno-0-139">139</a></span>
 <span class="normal"><a href="#__codelineno-0-140">140</a></span>
 <span class="normal"><a href="#__codelineno-0-141">141</a></span>
@@ -4413,65 +4503,62 @@ work across various providers by providing a common prompt interface.</p>
 <span class="normal"><a href="#__codelineno-0-187">187</a></span>
 <span class="normal"><a href="#__codelineno-0-188">188</a></span>
 <span class="normal"><a href="#__codelineno-0-189">189</a></span>
-<span class="normal"><a href="#__codelineno-0-190">190</a></span>
-<span class="normal"><a href="#__codelineno-0-191">191</a></span>
-<span class="normal"><a href="#__codelineno-0-192">192</a></span>
-<span class="normal"><a href="#__codelineno-0-193">193</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-138" name="__codelineno-0-138"></a><span class="k">def</span> <span class="nf">run</span><span class="p">(</span>
-<a id="__codelineno-0-139" name="__codelineno-0-139"></a>    <span class="bp">self</span><span class="p">,</span>
-<a id="__codelineno-0-140" name="__codelineno-0-140"></a>    <span class="n">call_decorator</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span>
-<a id="__codelineno-0-141" name="__codelineno-0-141"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">BaseDynamicConfig</span><span class="p">]],</span>
-<a id="__codelineno-0-142" name="__codelineno-0-142"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">_BaseCallResponseT</span><span class="p">],</span>
-<a id="__codelineno-0-143" name="__codelineno-0-143"></a>    <span class="p">]</span>
-<a id="__codelineno-0-144" name="__codelineno-0-144"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
-<a id="__codelineno-0-145" name="__codelineno-0-145"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">BaseDynamicConfig</span><span class="p">]],</span>
-<a id="__codelineno-0-146" name="__codelineno-0-146"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">_BaseStreamT</span><span class="p">],</span>
-<a id="__codelineno-0-147" name="__codelineno-0-147"></a>    <span class="p">]</span>
-<a id="__codelineno-0-148" name="__codelineno-0-148"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
-<a id="__codelineno-0-149" name="__codelineno-0-149"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">BaseDynamicConfig</span><span class="p">]],</span>
-<a id="__codelineno-0-150" name="__codelineno-0-150"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">_ResponseModelT</span><span class="p">],</span>
-<a id="__codelineno-0-151" name="__codelineno-0-151"></a>    <span class="p">]</span>
-<a id="__codelineno-0-152" name="__codelineno-0-152"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
-<a id="__codelineno-0-153" name="__codelineno-0-153"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">BaseDynamicConfig</span><span class="p">]],</span>
-<a id="__codelineno-0-154" name="__codelineno-0-154"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]],</span>
-<a id="__codelineno-0-155" name="__codelineno-0-155"></a>    <span class="p">],</span>
-<a id="__codelineno-0-156" name="__codelineno-0-156"></a>    <span class="o">*</span><span class="n">additional_decorators</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">_T</span><span class="p">],</span> <span class="n">_T</span><span class="p">],</span>
-<a id="__codelineno-0-157" name="__codelineno-0-157"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span>
-<a id="__codelineno-0-158" name="__codelineno-0-158"></a>    <span class="n">_BaseCallResponseT</span> <span class="o">|</span> <span class="n">_BaseStreamT</span> <span class="o">|</span> <span class="n">_ResponseModelT</span> <span class="o">|</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]</span>
-<a id="__codelineno-0-159" name="__codelineno-0-159"></a><span class="p">):</span>
-<a id="__codelineno-0-160" name="__codelineno-0-160"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the response of calling the API of the provided decorator.</span>
-<a id="__codelineno-0-161" name="__codelineno-0-161"></a>
-<a id="__codelineno-0-162" name="__codelineno-0-162"></a><span class="sd">    usage docs: learn/prompts.md#running-prompts</span>
-<a id="__codelineno-0-163" name="__codelineno-0-163"></a>
-<a id="__codelineno-0-164" name="__codelineno-0-164"></a><span class="sd">    Example:</span>
+<span class="normal"><a href="#__codelineno-0-190">190</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-135" name="__codelineno-0-135"></a><span class="k">def</span> <span class="nf">run</span><span class="p">(</span>
+<a id="__codelineno-0-136" name="__codelineno-0-136"></a>    <span class="bp">self</span><span class="p">,</span>
+<a id="__codelineno-0-137" name="__codelineno-0-137"></a>    <span class="n">call_decorator</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span>
+<a id="__codelineno-0-138" name="__codelineno-0-138"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">BaseDynamicConfig</span><span class="p">]],</span>
+<a id="__codelineno-0-139" name="__codelineno-0-139"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">_BaseCallResponseT</span><span class="p">],</span>
+<a id="__codelineno-0-140" name="__codelineno-0-140"></a>    <span class="p">]</span>
+<a id="__codelineno-0-141" name="__codelineno-0-141"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
+<a id="__codelineno-0-142" name="__codelineno-0-142"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">BaseDynamicConfig</span><span class="p">]],</span>
+<a id="__codelineno-0-143" name="__codelineno-0-143"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">_BaseStreamT</span><span class="p">],</span>
+<a id="__codelineno-0-144" name="__codelineno-0-144"></a>    <span class="p">]</span>
+<a id="__codelineno-0-145" name="__codelineno-0-145"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
+<a id="__codelineno-0-146" name="__codelineno-0-146"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">BaseDynamicConfig</span><span class="p">]],</span>
+<a id="__codelineno-0-147" name="__codelineno-0-147"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">_ResponseModelT</span><span class="p">],</span>
+<a id="__codelineno-0-148" name="__codelineno-0-148"></a>    <span class="p">]</span>
+<a id="__codelineno-0-149" name="__codelineno-0-149"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
+<a id="__codelineno-0-150" name="__codelineno-0-150"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">BaseDynamicConfig</span><span class="p">]],</span>
+<a id="__codelineno-0-151" name="__codelineno-0-151"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]],</span>
+<a id="__codelineno-0-152" name="__codelineno-0-152"></a>    <span class="p">],</span>
+<a id="__codelineno-0-153" name="__codelineno-0-153"></a>    <span class="o">*</span><span class="n">additional_decorators</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">_T</span><span class="p">],</span> <span class="n">_T</span><span class="p">],</span>
+<a id="__codelineno-0-154" name="__codelineno-0-154"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span>
+<a id="__codelineno-0-155" name="__codelineno-0-155"></a>    <span class="n">_BaseCallResponseT</span> <span class="o">|</span> <span class="n">_BaseStreamT</span> <span class="o">|</span> <span class="n">_ResponseModelT</span> <span class="o">|</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]</span>
+<a id="__codelineno-0-156" name="__codelineno-0-156"></a><span class="p">):</span>
+<a id="__codelineno-0-157" name="__codelineno-0-157"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the response of calling the API of the provided decorator.</span>
+<a id="__codelineno-0-158" name="__codelineno-0-158"></a>
+<a id="__codelineno-0-159" name="__codelineno-0-159"></a><span class="sd">    usage docs: learn/prompts.md#running-prompts</span>
+<a id="__codelineno-0-160" name="__codelineno-0-160"></a>
+<a id="__codelineno-0-161" name="__codelineno-0-161"></a><span class="sd">    Example:</span>
+<a id="__codelineno-0-162" name="__codelineno-0-162"></a>
+<a id="__codelineno-0-163" name="__codelineno-0-163"></a><span class="sd">    ```python</span>
+<a id="__codelineno-0-164" name="__codelineno-0-164"></a><span class="sd">    from mirascope.core import BasePrompt, openai, prompt_template</span>
 <a id="__codelineno-0-165" name="__codelineno-0-165"></a>
-<a id="__codelineno-0-166" name="__codelineno-0-166"></a><span class="sd">    ```python</span>
-<a id="__codelineno-0-167" name="__codelineno-0-167"></a><span class="sd">    from mirascope.core import BasePrompt, openai, prompt_template</span>
-<a id="__codelineno-0-168" name="__codelineno-0-168"></a>
-<a id="__codelineno-0-169" name="__codelineno-0-169"></a>
-<a id="__codelineno-0-170" name="__codelineno-0-170"></a><span class="sd">    @prompt_template(&quot;Recommend a {genre} book&quot;)</span>
-<a id="__codelineno-0-171" name="__codelineno-0-171"></a><span class="sd">    class BookRecommendationPrompt(BasePrompt):</span>
-<a id="__codelineno-0-172" name="__codelineno-0-172"></a><span class="sd">        genre: str</span>
-<a id="__codelineno-0-173" name="__codelineno-0-173"></a>
-<a id="__codelineno-0-174" name="__codelineno-0-174"></a>
-<a id="__codelineno-0-175" name="__codelineno-0-175"></a><span class="sd">    prompt = BookRecommendationPrompt(genre=&quot;fantasy&quot;)</span>
-<a id="__codelineno-0-176" name="__codelineno-0-176"></a><span class="sd">    response = prompt.run(openai.call(&quot;gpt-4o-mini&quot;))</span>
-<a id="__codelineno-0-177" name="__codelineno-0-177"></a><span class="sd">    print(response.content)</span>
-<a id="__codelineno-0-178" name="__codelineno-0-178"></a><span class="sd">    ```</span>
-<a id="__codelineno-0-179" name="__codelineno-0-179"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-180" name="__codelineno-0-180"></a>    <span class="n">kwargs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model_dump</span><span class="p">()</span>
-<a id="__codelineno-0-181" name="__codelineno-0-181"></a>    <span class="n">args_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">kwargs</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<a id="__codelineno-0-182" name="__codelineno-0-182"></a>    <span class="n">namespace</span><span class="p">,</span> <span class="n">fn_name</span> <span class="o">=</span> <span class="p">{},</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
-<a id="__codelineno-0-183" name="__codelineno-0-183"></a>    <span class="n">exec</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;def </span><span class="si">{</span><span class="n">fn_name</span><span class="si">}</span><span class="s2">(</span><span class="si">{</span><span class="n">args_str</span><span class="si">}</span><span class="s2">): ...&quot;</span><span class="p">,</span> <span class="n">namespace</span><span class="p">)</span>
-<a id="__codelineno-0-184" name="__codelineno-0-184"></a>    <span class="k">return</span> <span class="n">reduce</span><span class="p">(</span>
-<a id="__codelineno-0-185" name="__codelineno-0-185"></a>        <span class="k">lambda</span> <span class="n">res</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="n">res</span><span class="p">),</span>  <span class="c1"># type: ignore</span>
-<a id="__codelineno-0-186" name="__codelineno-0-186"></a>        <span class="p">[</span>
-<a id="__codelineno-0-187" name="__codelineno-0-187"></a>            <span class="n">metadata</span><span class="p">(</span><span class="n">get_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dynamic_config</span><span class="p">())),</span>
-<a id="__codelineno-0-188" name="__codelineno-0-188"></a>            <span class="n">prompt_template</span><span class="p">(</span><span class="n">get_prompt_template</span><span class="p">(</span><span class="bp">self</span><span class="p">)),</span>
-<a id="__codelineno-0-189" name="__codelineno-0-189"></a>            <span class="n">call_decorator</span><span class="p">,</span>
-<a id="__codelineno-0-190" name="__codelineno-0-190"></a>            <span class="o">*</span><span class="n">additional_decorators</span><span class="p">,</span>
-<a id="__codelineno-0-191" name="__codelineno-0-191"></a>        <span class="p">],</span>
-<a id="__codelineno-0-192" name="__codelineno-0-192"></a>        <span class="n">namespace</span><span class="p">[</span><span class="n">fn_name</span><span class="p">],</span>
-<a id="__codelineno-0-193" name="__codelineno-0-193"></a>    <span class="p">)(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-0-166" name="__codelineno-0-166"></a>
+<a id="__codelineno-0-167" name="__codelineno-0-167"></a><span class="sd">    @prompt_template(&quot;Recommend a {genre} book&quot;)</span>
+<a id="__codelineno-0-168" name="__codelineno-0-168"></a><span class="sd">    class BookRecommendationPrompt(BasePrompt):</span>
+<a id="__codelineno-0-169" name="__codelineno-0-169"></a><span class="sd">        genre: str</span>
+<a id="__codelineno-0-170" name="__codelineno-0-170"></a>
+<a id="__codelineno-0-171" name="__codelineno-0-171"></a>
+<a id="__codelineno-0-172" name="__codelineno-0-172"></a><span class="sd">    prompt = BookRecommendationPrompt(genre=&quot;fantasy&quot;)</span>
+<a id="__codelineno-0-173" name="__codelineno-0-173"></a><span class="sd">    response = prompt.run(openai.call(&quot;gpt-4o-mini&quot;))</span>
+<a id="__codelineno-0-174" name="__codelineno-0-174"></a><span class="sd">    print(response.content)</span>
+<a id="__codelineno-0-175" name="__codelineno-0-175"></a><span class="sd">    ```</span>
+<a id="__codelineno-0-176" name="__codelineno-0-176"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-177" name="__codelineno-0-177"></a>    <span class="n">kwargs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model_dump</span><span class="p">()</span>
+<a id="__codelineno-0-178" name="__codelineno-0-178"></a>    <span class="n">args_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">kwargs</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<a id="__codelineno-0-179" name="__codelineno-0-179"></a>    <span class="n">namespace</span><span class="p">,</span> <span class="n">fn_name</span> <span class="o">=</span> <span class="p">{},</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+<a id="__codelineno-0-180" name="__codelineno-0-180"></a>    <span class="n">exec</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;def </span><span class="si">{</span><span class="n">fn_name</span><span class="si">}</span><span class="s2">(</span><span class="si">{</span><span class="n">args_str</span><span class="si">}</span><span class="s2">): ...&quot;</span><span class="p">,</span> <span class="n">namespace</span><span class="p">)</span>
+<a id="__codelineno-0-181" name="__codelineno-0-181"></a>    <span class="k">return</span> <span class="n">reduce</span><span class="p">(</span>
+<a id="__codelineno-0-182" name="__codelineno-0-182"></a>        <span class="k">lambda</span> <span class="n">res</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="n">res</span><span class="p">),</span>  <span class="c1"># type: ignore</span>
+<a id="__codelineno-0-183" name="__codelineno-0-183"></a>        <span class="p">[</span>
+<a id="__codelineno-0-184" name="__codelineno-0-184"></a>            <span class="n">metadata</span><span class="p">(</span><span class="n">get_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dynamic_config</span><span class="p">())),</span>
+<a id="__codelineno-0-185" name="__codelineno-0-185"></a>            <span class="n">prompt_template</span><span class="p">(</span><span class="n">get_prompt_template</span><span class="p">(</span><span class="bp">self</span><span class="p">)),</span>
+<a id="__codelineno-0-186" name="__codelineno-0-186"></a>            <span class="n">call_decorator</span><span class="p">,</span>
+<a id="__codelineno-0-187" name="__codelineno-0-187"></a>            <span class="o">*</span><span class="n">additional_decorators</span><span class="p">,</span>
+<a id="__codelineno-0-188" name="__codelineno-0-188"></a>        <span class="p">],</span>
+<a id="__codelineno-0-189" name="__codelineno-0-189"></a>        <span class="n">namespace</span><span class="p">[</span><span class="n">fn_name</span><span class="p">],</span>
+<a id="__codelineno-0-190" name="__codelineno-0-190"></a>    <span class="p">)(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -4488,32 +4575,32 @@ work across various providers by providing a common prompt interface.</p>
 <a href="#mirascope.core.base.prompt.BasePrompt.run_async" class="headerlink" title="Permanent link">&para;</a></h3>
 <div class="doc-signature highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">run_async</span><span class="p">(</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">call_decorator</span><span class="p">:</span> <span class="p">(</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]]],</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>            <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._BaseCallResponseT">_BaseCallResponseT</span></span><span class="p">]],</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]]],</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>            <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._BaseCallResponseT">_BaseCallResponseT</span></span><span class="p">]],</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="p">]</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]]],</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._BaseStreamT">_BaseStreamT</span></span><span class="p">]],</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]]],</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._BaseStreamT">_BaseStreamT</span></span><span class="p">]],</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="p">]</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]]],</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]],</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]]],</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]],</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="p">]</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]]],</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="mirascope.core.base.dynamic_config.BaseDynamicConfig" href="../dynamic_config/#mirascope.core.base.dynamic_config.BaseDynamicConfig">BaseDynamicConfig</a></span><span class="p">]]],</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.AsyncIterable" href="https://docs.python.org/3/library/typing.html#typing.AsyncIterable">AsyncIterable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]],</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.AsyncIterable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterable">AsyncIterable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]],</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            <span class="p">],</span>
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="p">]</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="p">),</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="o">*</span><span class="n">additional_decorators</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[[</span><span class="n"><span title="mirascope.core.base.prompt._T">_T</span></span><span class="p">],</span> <span class="n"><span title="mirascope.core.base.prompt._T">_T</span></span><span class="p">]</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="o">*</span><span class="n">additional_decorators</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></span><span class="p">[[</span><span class="n"><span title="mirascope.core.base.prompt._T">_T</span></span><span class="p">],</span> <span class="n"><span title="mirascope.core.base.prompt._T">_T</span></span><span class="p">]</span>
 <a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._BaseCallResponseT">_BaseCallResponseT</span></span><span class="p">]</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._BaseStreamT">_BaseStreamT</span></span><span class="p">]</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.AsyncIterable" href="https://docs.python.org/3/library/typing.html#typing.AsyncIterable">AsyncIterable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]]</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._BaseCallResponseT">_BaseCallResponseT</span></span><span class="p">]</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._BaseStreamT">_BaseStreamT</span></span><span class="p">]</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Awaitable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable">Awaitable</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="collections.abc.AsyncIterable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterable">AsyncIterable</a></span><span class="p">[</span><span class="n"><span title="mirascope.core.base.prompt._ResponseModelT">_ResponseModelT</span></span><span class="p">]]</span>
 <a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="p">)</span>
 </code></pre></div>
 
@@ -4546,7 +4633,10 @@ work across various providers by providing a common prompt interface.</p>
 
             <details class="quote">
               <summary>Source code in <code>mirascope/core/base/prompt.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-235">235</a></span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-232">232</a></span>
+<span class="normal"><a href="#__codelineno-0-233">233</a></span>
+<span class="normal"><a href="#__codelineno-0-234">234</a></span>
+<span class="normal"><a href="#__codelineno-0-235">235</a></span>
 <span class="normal"><a href="#__codelineno-0-236">236</a></span>
 <span class="normal"><a href="#__codelineno-0-237">237</a></span>
 <span class="normal"><a href="#__codelineno-0-238">238</a></span>
@@ -4607,74 +4697,71 @@ work across various providers by providing a common prompt interface.</p>
 <span class="normal"><a href="#__codelineno-0-293">293</a></span>
 <span class="normal"><a href="#__codelineno-0-294">294</a></span>
 <span class="normal"><a href="#__codelineno-0-295">295</a></span>
-<span class="normal"><a href="#__codelineno-0-296">296</a></span>
-<span class="normal"><a href="#__codelineno-0-297">297</a></span>
-<span class="normal"><a href="#__codelineno-0-298">298</a></span>
-<span class="normal"><a href="#__codelineno-0-299">299</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-235" name="__codelineno-0-235"></a><span class="k">def</span> <span class="nf">run_async</span><span class="p">(</span>
-<a id="__codelineno-0-236" name="__codelineno-0-236"></a>    <span class="bp">self</span><span class="p">,</span>
-<a id="__codelineno-0-237" name="__codelineno-0-237"></a>    <span class="n">call_decorator</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span>
-<a id="__codelineno-0-238" name="__codelineno-0-238"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">BaseDynamicConfig</span><span class="p">]]],</span>
-<a id="__codelineno-0-239" name="__codelineno-0-239"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_BaseCallResponseT</span><span class="p">]],</span>
-<a id="__codelineno-0-240" name="__codelineno-0-240"></a>    <span class="p">]</span>
-<a id="__codelineno-0-241" name="__codelineno-0-241"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
-<a id="__codelineno-0-242" name="__codelineno-0-242"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">BaseDynamicConfig</span><span class="p">]]],</span>
-<a id="__codelineno-0-243" name="__codelineno-0-243"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_BaseStreamT</span><span class="p">]],</span>
-<a id="__codelineno-0-244" name="__codelineno-0-244"></a>    <span class="p">]</span>
-<a id="__codelineno-0-245" name="__codelineno-0-245"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
-<a id="__codelineno-0-246" name="__codelineno-0-246"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">BaseDynamicConfig</span><span class="p">]]],</span>
-<a id="__codelineno-0-247" name="__codelineno-0-247"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]],</span>
-<a id="__codelineno-0-248" name="__codelineno-0-248"></a>    <span class="p">]</span>
-<a id="__codelineno-0-249" name="__codelineno-0-249"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
-<a id="__codelineno-0-250" name="__codelineno-0-250"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">BaseDynamicConfig</span><span class="p">]]],</span>
-<a id="__codelineno-0-251" name="__codelineno-0-251"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">AsyncIterable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]]],</span>
-<a id="__codelineno-0-252" name="__codelineno-0-252"></a>    <span class="p">],</span>
-<a id="__codelineno-0-253" name="__codelineno-0-253"></a>    <span class="o">*</span><span class="n">additional_decorators</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">_T</span><span class="p">],</span> <span class="n">_T</span><span class="p">],</span>
-<a id="__codelineno-0-254" name="__codelineno-0-254"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span>
-<a id="__codelineno-0-255" name="__codelineno-0-255"></a>    <span class="n">Awaitable</span><span class="p">[</span><span class="n">_BaseCallResponseT</span><span class="p">]</span>
-<a id="__codelineno-0-256" name="__codelineno-0-256"></a>    <span class="o">|</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_BaseStreamT</span><span class="p">]</span>
-<a id="__codelineno-0-257" name="__codelineno-0-257"></a>    <span class="o">|</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]</span>
-<a id="__codelineno-0-258" name="__codelineno-0-258"></a>    <span class="o">|</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">AsyncIterable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]]</span>
-<a id="__codelineno-0-259" name="__codelineno-0-259"></a><span class="p">):</span>
-<a id="__codelineno-0-260" name="__codelineno-0-260"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the response of calling the API of the provided decorator.</span>
-<a id="__codelineno-0-261" name="__codelineno-0-261"></a>
-<a id="__codelineno-0-262" name="__codelineno-0-262"></a><span class="sd">    usage docs: learn/prompts.md#running-prompts</span>
-<a id="__codelineno-0-263" name="__codelineno-0-263"></a>
-<a id="__codelineno-0-264" name="__codelineno-0-264"></a><span class="sd">    Example:</span>
+<span class="normal"><a href="#__codelineno-0-296">296</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-232" name="__codelineno-0-232"></a><span class="k">def</span> <span class="nf">run_async</span><span class="p">(</span>
+<a id="__codelineno-0-233" name="__codelineno-0-233"></a>    <span class="bp">self</span><span class="p">,</span>
+<a id="__codelineno-0-234" name="__codelineno-0-234"></a>    <span class="n">call_decorator</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span>
+<a id="__codelineno-0-235" name="__codelineno-0-235"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">BaseDynamicConfig</span><span class="p">]]],</span>
+<a id="__codelineno-0-236" name="__codelineno-0-236"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_BaseCallResponseT</span><span class="p">]],</span>
+<a id="__codelineno-0-237" name="__codelineno-0-237"></a>    <span class="p">]</span>
+<a id="__codelineno-0-238" name="__codelineno-0-238"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
+<a id="__codelineno-0-239" name="__codelineno-0-239"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">BaseDynamicConfig</span><span class="p">]]],</span>
+<a id="__codelineno-0-240" name="__codelineno-0-240"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_BaseStreamT</span><span class="p">]],</span>
+<a id="__codelineno-0-241" name="__codelineno-0-241"></a>    <span class="p">]</span>
+<a id="__codelineno-0-242" name="__codelineno-0-242"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
+<a id="__codelineno-0-243" name="__codelineno-0-243"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">BaseDynamicConfig</span><span class="p">]]],</span>
+<a id="__codelineno-0-244" name="__codelineno-0-244"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]],</span>
+<a id="__codelineno-0-245" name="__codelineno-0-245"></a>    <span class="p">]</span>
+<a id="__codelineno-0-246" name="__codelineno-0-246"></a>    <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span>
+<a id="__codelineno-0-247" name="__codelineno-0-247"></a>        <span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">BaseDynamicConfig</span><span class="p">]]],</span>
+<a id="__codelineno-0-248" name="__codelineno-0-248"></a>        <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">AsyncIterable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]]],</span>
+<a id="__codelineno-0-249" name="__codelineno-0-249"></a>    <span class="p">],</span>
+<a id="__codelineno-0-250" name="__codelineno-0-250"></a>    <span class="o">*</span><span class="n">additional_decorators</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">_T</span><span class="p">],</span> <span class="n">_T</span><span class="p">],</span>
+<a id="__codelineno-0-251" name="__codelineno-0-251"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span>
+<a id="__codelineno-0-252" name="__codelineno-0-252"></a>    <span class="n">Awaitable</span><span class="p">[</span><span class="n">_BaseCallResponseT</span><span class="p">]</span>
+<a id="__codelineno-0-253" name="__codelineno-0-253"></a>    <span class="o">|</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_BaseStreamT</span><span class="p">]</span>
+<a id="__codelineno-0-254" name="__codelineno-0-254"></a>    <span class="o">|</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]</span>
+<a id="__codelineno-0-255" name="__codelineno-0-255"></a>    <span class="o">|</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">AsyncIterable</span><span class="p">[</span><span class="n">_ResponseModelT</span><span class="p">]]</span>
+<a id="__codelineno-0-256" name="__codelineno-0-256"></a><span class="p">):</span>
+<a id="__codelineno-0-257" name="__codelineno-0-257"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the response of calling the API of the provided decorator.</span>
+<a id="__codelineno-0-258" name="__codelineno-0-258"></a>
+<a id="__codelineno-0-259" name="__codelineno-0-259"></a><span class="sd">    usage docs: learn/prompts.md#running-prompts</span>
+<a id="__codelineno-0-260" name="__codelineno-0-260"></a>
+<a id="__codelineno-0-261" name="__codelineno-0-261"></a><span class="sd">    Example:</span>
+<a id="__codelineno-0-262" name="__codelineno-0-262"></a>
+<a id="__codelineno-0-263" name="__codelineno-0-263"></a><span class="sd">    ```python</span>
+<a id="__codelineno-0-264" name="__codelineno-0-264"></a><span class="sd">    import asyncio</span>
 <a id="__codelineno-0-265" name="__codelineno-0-265"></a>
-<a id="__codelineno-0-266" name="__codelineno-0-266"></a><span class="sd">    ```python</span>
-<a id="__codelineno-0-267" name="__codelineno-0-267"></a><span class="sd">    import asyncio</span>
+<a id="__codelineno-0-266" name="__codelineno-0-266"></a><span class="sd">    from mirascope.core import BasePrompt, openai, prompt_template</span>
+<a id="__codelineno-0-267" name="__codelineno-0-267"></a>
 <a id="__codelineno-0-268" name="__codelineno-0-268"></a>
-<a id="__codelineno-0-269" name="__codelineno-0-269"></a><span class="sd">    from mirascope.core import BasePrompt, openai, prompt_template</span>
-<a id="__codelineno-0-270" name="__codelineno-0-270"></a>
-<a id="__codelineno-0-271" name="__codelineno-0-271"></a>
-<a id="__codelineno-0-272" name="__codelineno-0-272"></a><span class="sd">    @prompt_template(&quot;Recommend a {genre} book&quot;)</span>
-<a id="__codelineno-0-273" name="__codelineno-0-273"></a><span class="sd">    class BookRecommendationPrompt(BasePrompt):</span>
-<a id="__codelineno-0-274" name="__codelineno-0-274"></a><span class="sd">        genre: str</span>
-<a id="__codelineno-0-275" name="__codelineno-0-275"></a>
-<a id="__codelineno-0-276" name="__codelineno-0-276"></a>
-<a id="__codelineno-0-277" name="__codelineno-0-277"></a><span class="sd">    async def run():</span>
-<a id="__codelineno-0-278" name="__codelineno-0-278"></a><span class="sd">        prompt = BookRecommendationPrompt(genre=&quot;fantasy&quot;)</span>
-<a id="__codelineno-0-279" name="__codelineno-0-279"></a><span class="sd">        response = await prompt.run_async(openai.call(&quot;gpt-4o-mini&quot;))</span>
-<a id="__codelineno-0-280" name="__codelineno-0-280"></a><span class="sd">        print(response.content)</span>
-<a id="__codelineno-0-281" name="__codelineno-0-281"></a>
-<a id="__codelineno-0-282" name="__codelineno-0-282"></a>
-<a id="__codelineno-0-283" name="__codelineno-0-283"></a><span class="sd">    asyncio.run(run())</span>
-<a id="__codelineno-0-284" name="__codelineno-0-284"></a><span class="sd">    ```</span>
-<a id="__codelineno-0-285" name="__codelineno-0-285"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-286" name="__codelineno-0-286"></a>    <span class="n">kwargs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model_dump</span><span class="p">()</span>
-<a id="__codelineno-0-287" name="__codelineno-0-287"></a>    <span class="n">args_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">kwargs</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<a id="__codelineno-0-288" name="__codelineno-0-288"></a>    <span class="n">namespace</span><span class="p">,</span> <span class="n">fn_name</span> <span class="o">=</span> <span class="p">{},</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
-<a id="__codelineno-0-289" name="__codelineno-0-289"></a>    <span class="n">exec</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;async def </span><span class="si">{</span><span class="n">fn_name</span><span class="si">}</span><span class="s2">(</span><span class="si">{</span><span class="n">args_str</span><span class="si">}</span><span class="s2">): ...&quot;</span><span class="p">,</span> <span class="n">namespace</span><span class="p">)</span>
-<a id="__codelineno-0-290" name="__codelineno-0-290"></a>    <span class="k">return</span> <span class="n">reduce</span><span class="p">(</span>
-<a id="__codelineno-0-291" name="__codelineno-0-291"></a>        <span class="k">lambda</span> <span class="n">res</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="n">res</span><span class="p">),</span>  <span class="c1"># type: ignore</span>
-<a id="__codelineno-0-292" name="__codelineno-0-292"></a>        <span class="p">[</span>
-<a id="__codelineno-0-293" name="__codelineno-0-293"></a>            <span class="n">metadata</span><span class="p">(</span><span class="n">get_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dynamic_config</span><span class="p">())),</span>
-<a id="__codelineno-0-294" name="__codelineno-0-294"></a>            <span class="n">prompt_template</span><span class="p">(</span><span class="n">get_prompt_template</span><span class="p">(</span><span class="bp">self</span><span class="p">)),</span>
-<a id="__codelineno-0-295" name="__codelineno-0-295"></a>            <span class="n">call_decorator</span><span class="p">,</span>
-<a id="__codelineno-0-296" name="__codelineno-0-296"></a>            <span class="o">*</span><span class="n">additional_decorators</span><span class="p">,</span>
-<a id="__codelineno-0-297" name="__codelineno-0-297"></a>        <span class="p">],</span>
-<a id="__codelineno-0-298" name="__codelineno-0-298"></a>        <span class="n">namespace</span><span class="p">[</span><span class="n">fn_name</span><span class="p">],</span>
-<a id="__codelineno-0-299" name="__codelineno-0-299"></a>    <span class="p">)(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-0-269" name="__codelineno-0-269"></a><span class="sd">    @prompt_template(&quot;Recommend a {genre} book&quot;)</span>
+<a id="__codelineno-0-270" name="__codelineno-0-270"></a><span class="sd">    class BookRecommendationPrompt(BasePrompt):</span>
+<a id="__codelineno-0-271" name="__codelineno-0-271"></a><span class="sd">        genre: str</span>
+<a id="__codelineno-0-272" name="__codelineno-0-272"></a>
+<a id="__codelineno-0-273" name="__codelineno-0-273"></a>
+<a id="__codelineno-0-274" name="__codelineno-0-274"></a><span class="sd">    async def run():</span>
+<a id="__codelineno-0-275" name="__codelineno-0-275"></a><span class="sd">        prompt = BookRecommendationPrompt(genre=&quot;fantasy&quot;)</span>
+<a id="__codelineno-0-276" name="__codelineno-0-276"></a><span class="sd">        response = await prompt.run_async(openai.call(&quot;gpt-4o-mini&quot;))</span>
+<a id="__codelineno-0-277" name="__codelineno-0-277"></a><span class="sd">        print(response.content)</span>
+<a id="__codelineno-0-278" name="__codelineno-0-278"></a>
+<a id="__codelineno-0-279" name="__codelineno-0-279"></a>
+<a id="__codelineno-0-280" name="__codelineno-0-280"></a><span class="sd">    asyncio.run(run())</span>
+<a id="__codelineno-0-281" name="__codelineno-0-281"></a><span class="sd">    ```</span>
+<a id="__codelineno-0-282" name="__codelineno-0-282"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-283" name="__codelineno-0-283"></a>    <span class="n">kwargs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model_dump</span><span class="p">()</span>
+<a id="__codelineno-0-284" name="__codelineno-0-284"></a>    <span class="n">args_str</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">kwargs</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<a id="__codelineno-0-285" name="__codelineno-0-285"></a>    <span class="n">namespace</span><span class="p">,</span> <span class="n">fn_name</span> <span class="o">=</span> <span class="p">{},</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+<a id="__codelineno-0-286" name="__codelineno-0-286"></a>    <span class="n">exec</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;async def </span><span class="si">{</span><span class="n">fn_name</span><span class="si">}</span><span class="s2">(</span><span class="si">{</span><span class="n">args_str</span><span class="si">}</span><span class="s2">): ...&quot;</span><span class="p">,</span> <span class="n">namespace</span><span class="p">)</span>
+<a id="__codelineno-0-287" name="__codelineno-0-287"></a>    <span class="k">return</span> <span class="n">reduce</span><span class="p">(</span>
+<a id="__codelineno-0-288" name="__codelineno-0-288"></a>        <span class="k">lambda</span> <span class="n">res</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="n">res</span><span class="p">),</span>  <span class="c1"># type: ignore</span>
+<a id="__codelineno-0-289" name="__codelineno-0-289"></a>        <span class="p">[</span>
+<a id="__codelineno-0-290" name="__codelineno-0-290"></a>            <span class="n">metadata</span><span class="p">(</span><span class="n">get_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dynamic_config</span><span class="p">())),</span>
+<a id="__codelineno-0-291" name="__codelineno-0-291"></a>            <span class="n">prompt_template</span><span class="p">(</span><span class="n">get_prompt_template</span><span class="p">(</span><span class="bp">self</span><span class="p">)),</span>
+<a id="__codelineno-0-292" name="__codelineno-0-292"></a>            <span class="n">call_decorator</span><span class="p">,</span>
+<a id="__codelineno-0-293" name="__codelineno-0-293"></a>            <span class="o">*</span><span class="n">additional_decorators</span><span class="p">,</span>
+<a id="__codelineno-0-294" name="__codelineno-0-294"></a>        <span class="p">],</span>
+<a id="__codelineno-0-295" name="__codelineno-0-295"></a>        <span class="n">namespace</span><span class="p">[</span><span class="n">fn_name</span><span class="p">],</span>
+<a id="__codelineno-0-296" name="__codelineno-0-296"></a>    <span class="p">)(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -4735,7 +4822,7 @@ work across various providers by providing a common prompt interface.</p>
       <tbody>
           <tr class="doc-section-item">
 <td><code>decorator</code></td>            <td>
-                  <code><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></code>
+                  <code><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -4749,7 +4836,10 @@ attribute of the decorated input prompt or call.</p>
 
             <details class="quote">
               <summary>Source code in <code>mirascope/core/base/prompt.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-305">305</a></span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-302">302</a></span>
+<span class="normal"><a href="#__codelineno-0-303">303</a></span>
+<span class="normal"><a href="#__codelineno-0-304">304</a></span>
+<span class="normal"><a href="#__codelineno-0-305">305</a></span>
 <span class="normal"><a href="#__codelineno-0-306">306</a></span>
 <span class="normal"><a href="#__codelineno-0-307">307</a></span>
 <span class="normal"><a href="#__codelineno-0-308">308</a></span>
@@ -4785,49 +4875,46 @@ attribute of the decorated input prompt or call.</p>
 <span class="normal"><a href="#__codelineno-0-338">338</a></span>
 <span class="normal"><a href="#__codelineno-0-339">339</a></span>
 <span class="normal"><a href="#__codelineno-0-340">340</a></span>
-<span class="normal"><a href="#__codelineno-0-341">341</a></span>
-<span class="normal"><a href="#__codelineno-0-342">342</a></span>
-<span class="normal"><a href="#__codelineno-0-343">343</a></span>
-<span class="normal"><a href="#__codelineno-0-344">344</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-305" name="__codelineno-0-305"></a><span class="k">def</span> <span class="nf">prompt_template</span><span class="p">(</span><span class="n">template</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-<a id="__codelineno-0-306" name="__codelineno-0-306"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;A decorator for setting the `prompt_template` of a `BasePrompt` or `call`.</span>
-<a id="__codelineno-0-307" name="__codelineno-0-307"></a>
-<a id="__codelineno-0-308" name="__codelineno-0-308"></a><span class="sd">    usage docs: learn/prompts.md#prompt-templates</span>
-<a id="__codelineno-0-309" name="__codelineno-0-309"></a>
-<a id="__codelineno-0-310" name="__codelineno-0-310"></a><span class="sd">    Example:</span>
+<span class="normal"><a href="#__codelineno-0-341">341</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-302" name="__codelineno-0-302"></a><span class="k">def</span> <span class="nf">prompt_template</span><span class="p">(</span><span class="n">template</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<a id="__codelineno-0-303" name="__codelineno-0-303"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;A decorator for setting the `prompt_template` of a `BasePrompt` or `call`.</span>
+<a id="__codelineno-0-304" name="__codelineno-0-304"></a>
+<a id="__codelineno-0-305" name="__codelineno-0-305"></a><span class="sd">    usage docs: learn/prompts.md#prompt-templates</span>
+<a id="__codelineno-0-306" name="__codelineno-0-306"></a>
+<a id="__codelineno-0-307" name="__codelineno-0-307"></a><span class="sd">    Example:</span>
+<a id="__codelineno-0-308" name="__codelineno-0-308"></a>
+<a id="__codelineno-0-309" name="__codelineno-0-309"></a><span class="sd">    ```python</span>
+<a id="__codelineno-0-310" name="__codelineno-0-310"></a><span class="sd">    from mirascope.core import openai, prompt_template</span>
 <a id="__codelineno-0-311" name="__codelineno-0-311"></a>
-<a id="__codelineno-0-312" name="__codelineno-0-312"></a><span class="sd">    ```python</span>
-<a id="__codelineno-0-313" name="__codelineno-0-313"></a><span class="sd">    from mirascope.core import openai, prompt_template</span>
-<a id="__codelineno-0-314" name="__codelineno-0-314"></a>
-<a id="__codelineno-0-315" name="__codelineno-0-315"></a>
-<a id="__codelineno-0-316" name="__codelineno-0-316"></a><span class="sd">    @openai.call(&quot;gpt-4o-mini&quot;)</span>
-<a id="__codelineno-0-317" name="__codelineno-0-317"></a><span class="sd">    @prompt_template(&quot;Recommend a {genre} book&quot;)</span>
-<a id="__codelineno-0-318" name="__codelineno-0-318"></a><span class="sd">    def recommend_book(genre: str):</span>
-<a id="__codelineno-0-319" name="__codelineno-0-319"></a><span class="sd">        ...</span>
-<a id="__codelineno-0-320" name="__codelineno-0-320"></a>
-<a id="__codelineno-0-321" name="__codelineno-0-321"></a>
-<a id="__codelineno-0-322" name="__codelineno-0-322"></a><span class="sd">    response = recommend_book(&quot;fantasy&quot;)</span>
-<a id="__codelineno-0-323" name="__codelineno-0-323"></a><span class="sd">    print(response.prompt_template)</span>
-<a id="__codelineno-0-324" name="__codelineno-0-324"></a><span class="sd">    print(response.fn_args)</span>
-<a id="__codelineno-0-325" name="__codelineno-0-325"></a><span class="sd">    ```</span>
-<a id="__codelineno-0-326" name="__codelineno-0-326"></a>
-<a id="__codelineno-0-327" name="__codelineno-0-327"></a><span class="sd">    Returns:</span>
-<a id="__codelineno-0-328" name="__codelineno-0-328"></a><span class="sd">        decorator (Callable): The decorator function that updates the `_prompt_template`</span>
-<a id="__codelineno-0-329" name="__codelineno-0-329"></a><span class="sd">            attribute of the decorated input prompt or call.</span>
-<a id="__codelineno-0-330" name="__codelineno-0-330"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-312" name="__codelineno-0-312"></a>
+<a id="__codelineno-0-313" name="__codelineno-0-313"></a><span class="sd">    @openai.call(&quot;gpt-4o-mini&quot;)</span>
+<a id="__codelineno-0-314" name="__codelineno-0-314"></a><span class="sd">    @prompt_template(&quot;Recommend a {genre} book&quot;)</span>
+<a id="__codelineno-0-315" name="__codelineno-0-315"></a><span class="sd">    def recommend_book(genre: str):</span>
+<a id="__codelineno-0-316" name="__codelineno-0-316"></a><span class="sd">        ...</span>
+<a id="__codelineno-0-317" name="__codelineno-0-317"></a>
+<a id="__codelineno-0-318" name="__codelineno-0-318"></a>
+<a id="__codelineno-0-319" name="__codelineno-0-319"></a><span class="sd">    response = recommend_book(&quot;fantasy&quot;)</span>
+<a id="__codelineno-0-320" name="__codelineno-0-320"></a><span class="sd">    print(response.prompt_template)</span>
+<a id="__codelineno-0-321" name="__codelineno-0-321"></a><span class="sd">    print(response.fn_args)</span>
+<a id="__codelineno-0-322" name="__codelineno-0-322"></a><span class="sd">    ```</span>
+<a id="__codelineno-0-323" name="__codelineno-0-323"></a>
+<a id="__codelineno-0-324" name="__codelineno-0-324"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-0-325" name="__codelineno-0-325"></a><span class="sd">        decorator (Callable): The decorator function that updates the `_prompt_template`</span>
+<a id="__codelineno-0-326" name="__codelineno-0-326"></a><span class="sd">            attribute of the decorated input prompt or call.</span>
+<a id="__codelineno-0-327" name="__codelineno-0-327"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-328" name="__codelineno-0-328"></a>
+<a id="__codelineno-0-329" name="__codelineno-0-329"></a>    <span class="nd">@overload</span>
+<a id="__codelineno-0-330" name="__codelineno-0-330"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]:</span> <span class="o">...</span>
 <a id="__codelineno-0-331" name="__codelineno-0-331"></a>
 <a id="__codelineno-0-332" name="__codelineno-0-332"></a>    <span class="nd">@overload</span>
-<a id="__codelineno-0-333" name="__codelineno-0-333"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]:</span> <span class="o">...</span>  <span class="c1"># pragma: no cover</span>
+<a id="__codelineno-0-333" name="__codelineno-0-333"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">]:</span> <span class="o">...</span>
 <a id="__codelineno-0-334" name="__codelineno-0-334"></a>
-<a id="__codelineno-0-335" name="__codelineno-0-335"></a>    <span class="nd">@overload</span>
-<a id="__codelineno-0-336" name="__codelineno-0-336"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">]:</span> <span class="o">...</span>  <span class="c1"># pragma: no cover</span>
-<a id="__codelineno-0-337" name="__codelineno-0-337"></a>
-<a id="__codelineno-0-338" name="__codelineno-0-338"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span>
-<a id="__codelineno-0-339" name="__codelineno-0-339"></a>        <span class="n">prompt</span><span class="p">:</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">],</span>
-<a id="__codelineno-0-340" name="__codelineno-0-340"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">]:</span>
-<a id="__codelineno-0-341" name="__codelineno-0-341"></a>        <span class="nb">setattr</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="s2">&quot;_prompt_template&quot;</span><span class="p">,</span> <span class="n">template</span><span class="p">)</span>
-<a id="__codelineno-0-342" name="__codelineno-0-342"></a>        <span class="k">return</span> <span class="n">prompt</span>
-<a id="__codelineno-0-343" name="__codelineno-0-343"></a>
-<a id="__codelineno-0-344" name="__codelineno-0-344"></a>    <span class="k">return</span> <span class="n">inner</span>
+<a id="__codelineno-0-335" name="__codelineno-0-335"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span>
+<a id="__codelineno-0-336" name="__codelineno-0-336"></a>        <span class="n">prompt</span><span class="p">:</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">],</span>
+<a id="__codelineno-0-337" name="__codelineno-0-337"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">]:</span>
+<a id="__codelineno-0-338" name="__codelineno-0-338"></a>        <span class="n">prompt</span><span class="o">.</span><span class="n">_prompt_template</span> <span class="o">=</span> <span class="n">template</span>  <span class="c1"># pyright: ignore [reportAttributeAccessIssue,reportFunctionMemberAccess]</span>
+<a id="__codelineno-0-339" name="__codelineno-0-339"></a>        <span class="k">return</span> <span class="n">prompt</span>
+<a id="__codelineno-0-340" name="__codelineno-0-340"></a>
+<a id="__codelineno-0-341" name="__codelineno-0-341"></a>    <span class="k">return</span> <span class="n">inner</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -4882,7 +4969,7 @@ that can be used for logging or filtering.</p>
       <tbody>
           <tr class="doc-section-item">
 <td><code>decorator</code></td>            <td>
-                  <code><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></code>
+                  <code><a class="autorefs autorefs-external" title="collections.abc.Callable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable">Callable</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -4896,7 +4983,10 @@ attribute of the decorated input prompt or call.</p>
 
             <details class="quote">
               <summary>Source code in <code>mirascope/core/base/prompt.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-347">347</a></span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-344">344</a></span>
+<span class="normal"><a href="#__codelineno-0-345">345</a></span>
+<span class="normal"><a href="#__codelineno-0-346">346</a></span>
+<span class="normal"><a href="#__codelineno-0-347">347</a></span>
 <span class="normal"><a href="#__codelineno-0-348">348</a></span>
 <span class="normal"><a href="#__codelineno-0-349">349</a></span>
 <span class="normal"><a href="#__codelineno-0-350">350</a></span>
@@ -4937,54 +5027,51 @@ attribute of the decorated input prompt or call.</p>
 <span class="normal"><a href="#__codelineno-0-385">385</a></span>
 <span class="normal"><a href="#__codelineno-0-386">386</a></span>
 <span class="normal"><a href="#__codelineno-0-387">387</a></span>
-<span class="normal"><a href="#__codelineno-0-388">388</a></span>
-<span class="normal"><a href="#__codelineno-0-389">389</a></span>
-<span class="normal"><a href="#__codelineno-0-390">390</a></span>
-<span class="normal"><a href="#__codelineno-0-391">391</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-347" name="__codelineno-0-347"></a><span class="k">def</span> <span class="nf">metadata</span><span class="p">(</span><span class="n">metadata</span><span class="p">:</span> <span class="n">Metadata</span><span class="p">):</span>
-<a id="__codelineno-0-348" name="__codelineno-0-348"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;A decorator for adding metadata to a `BasePrompt` or `call`.</span>
-<a id="__codelineno-0-349" name="__codelineno-0-349"></a>
-<a id="__codelineno-0-350" name="__codelineno-0-350"></a><span class="sd">    usage docs: learn/prompts.md#metadata</span>
-<a id="__codelineno-0-351" name="__codelineno-0-351"></a>
-<a id="__codelineno-0-352" name="__codelineno-0-352"></a><span class="sd">    Adding this decorator to a `BasePrompt` or `call` updates the `metadata` annotation</span>
-<a id="__codelineno-0-353" name="__codelineno-0-353"></a><span class="sd">    to the given value. This is useful for adding metadata to a `BasePrompt` or `call`</span>
-<a id="__codelineno-0-354" name="__codelineno-0-354"></a><span class="sd">    that can be used for logging or filtering.</span>
-<a id="__codelineno-0-355" name="__codelineno-0-355"></a>
-<a id="__codelineno-0-356" name="__codelineno-0-356"></a><span class="sd">    Example:</span>
+<span class="normal"><a href="#__codelineno-0-388">388</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-344" name="__codelineno-0-344"></a><span class="k">def</span> <span class="nf">metadata</span><span class="p">(</span><span class="n">metadata</span><span class="p">:</span> <span class="n">Metadata</span><span class="p">):</span>
+<a id="__codelineno-0-345" name="__codelineno-0-345"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;A decorator for adding metadata to a `BasePrompt` or `call`.</span>
+<a id="__codelineno-0-346" name="__codelineno-0-346"></a>
+<a id="__codelineno-0-347" name="__codelineno-0-347"></a><span class="sd">    usage docs: learn/prompts.md#metadata</span>
+<a id="__codelineno-0-348" name="__codelineno-0-348"></a>
+<a id="__codelineno-0-349" name="__codelineno-0-349"></a><span class="sd">    Adding this decorator to a `BasePrompt` or `call` updates the `metadata` annotation</span>
+<a id="__codelineno-0-350" name="__codelineno-0-350"></a><span class="sd">    to the given value. This is useful for adding metadata to a `BasePrompt` or `call`</span>
+<a id="__codelineno-0-351" name="__codelineno-0-351"></a><span class="sd">    that can be used for logging or filtering.</span>
+<a id="__codelineno-0-352" name="__codelineno-0-352"></a>
+<a id="__codelineno-0-353" name="__codelineno-0-353"></a><span class="sd">    Example:</span>
+<a id="__codelineno-0-354" name="__codelineno-0-354"></a>
+<a id="__codelineno-0-355" name="__codelineno-0-355"></a><span class="sd">    ```python</span>
+<a id="__codelineno-0-356" name="__codelineno-0-356"></a><span class="sd">    from mirascope.core import metadata, openai, prompt_template</span>
 <a id="__codelineno-0-357" name="__codelineno-0-357"></a>
-<a id="__codelineno-0-358" name="__codelineno-0-358"></a><span class="sd">    ```python</span>
-<a id="__codelineno-0-359" name="__codelineno-0-359"></a><span class="sd">    from mirascope.core import metadata, openai, prompt_template</span>
-<a id="__codelineno-0-360" name="__codelineno-0-360"></a>
-<a id="__codelineno-0-361" name="__codelineno-0-361"></a>
-<a id="__codelineno-0-362" name="__codelineno-0-362"></a><span class="sd">    @openai.call(&quot;gpt-4o-mini&quot;)</span>
-<a id="__codelineno-0-363" name="__codelineno-0-363"></a><span class="sd">    @prompt_template(&quot;Recommend a {genre} book&quot;)</span>
-<a id="__codelineno-0-364" name="__codelineno-0-364"></a><span class="sd">    @metadata({&quot;tags&quot;: {&quot;version:0001&quot;, &quot;books&quot;}})</span>
-<a id="__codelineno-0-365" name="__codelineno-0-365"></a><span class="sd">    def recommend_book(genre: str):</span>
-<a id="__codelineno-0-366" name="__codelineno-0-366"></a><span class="sd">        ...</span>
-<a id="__codelineno-0-367" name="__codelineno-0-367"></a>
-<a id="__codelineno-0-368" name="__codelineno-0-368"></a>
-<a id="__codelineno-0-369" name="__codelineno-0-369"></a><span class="sd">    response = recommend_book(&quot;fantasy&quot;)</span>
-<a id="__codelineno-0-370" name="__codelineno-0-370"></a><span class="sd">    print(response.metadata)</span>
-<a id="__codelineno-0-371" name="__codelineno-0-371"></a><span class="sd">    ```</span>
-<a id="__codelineno-0-372" name="__codelineno-0-372"></a>
-<a id="__codelineno-0-373" name="__codelineno-0-373"></a><span class="sd">    Returns:</span>
-<a id="__codelineno-0-374" name="__codelineno-0-374"></a><span class="sd">        decorator (Callable): The decorator function that updates the `_metadata`</span>
-<a id="__codelineno-0-375" name="__codelineno-0-375"></a><span class="sd">            attribute of the decorated input prompt or call.</span>
-<a id="__codelineno-0-376" name="__codelineno-0-376"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-358" name="__codelineno-0-358"></a>
+<a id="__codelineno-0-359" name="__codelineno-0-359"></a><span class="sd">    @openai.call(&quot;gpt-4o-mini&quot;)</span>
+<a id="__codelineno-0-360" name="__codelineno-0-360"></a><span class="sd">    @prompt_template(&quot;Recommend a {genre} book&quot;)</span>
+<a id="__codelineno-0-361" name="__codelineno-0-361"></a><span class="sd">    @metadata({&quot;tags&quot;: {&quot;version:0001&quot;, &quot;books&quot;}})</span>
+<a id="__codelineno-0-362" name="__codelineno-0-362"></a><span class="sd">    def recommend_book(genre: str):</span>
+<a id="__codelineno-0-363" name="__codelineno-0-363"></a><span class="sd">        ...</span>
+<a id="__codelineno-0-364" name="__codelineno-0-364"></a>
+<a id="__codelineno-0-365" name="__codelineno-0-365"></a>
+<a id="__codelineno-0-366" name="__codelineno-0-366"></a><span class="sd">    response = recommend_book(&quot;fantasy&quot;)</span>
+<a id="__codelineno-0-367" name="__codelineno-0-367"></a><span class="sd">    print(response.metadata)</span>
+<a id="__codelineno-0-368" name="__codelineno-0-368"></a><span class="sd">    ```</span>
+<a id="__codelineno-0-369" name="__codelineno-0-369"></a>
+<a id="__codelineno-0-370" name="__codelineno-0-370"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-0-371" name="__codelineno-0-371"></a><span class="sd">        decorator (Callable): The decorator function that updates the `_metadata`</span>
+<a id="__codelineno-0-372" name="__codelineno-0-372"></a><span class="sd">            attribute of the decorated input prompt or call.</span>
+<a id="__codelineno-0-373" name="__codelineno-0-373"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-374" name="__codelineno-0-374"></a>
+<a id="__codelineno-0-375" name="__codelineno-0-375"></a>    <span class="nd">@overload</span>
+<a id="__codelineno-0-376" name="__codelineno-0-376"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]:</span> <span class="o">...</span>
 <a id="__codelineno-0-377" name="__codelineno-0-377"></a>
 <a id="__codelineno-0-378" name="__codelineno-0-378"></a>    <span class="nd">@overload</span>
-<a id="__codelineno-0-379" name="__codelineno-0-379"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]:</span> <span class="o">...</span>  <span class="c1"># pragma: no cover</span>
+<a id="__codelineno-0-379" name="__codelineno-0-379"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">]:</span> <span class="o">...</span>
 <a id="__codelineno-0-380" name="__codelineno-0-380"></a>
-<a id="__codelineno-0-381" name="__codelineno-0-381"></a>    <span class="nd">@overload</span>
-<a id="__codelineno-0-382" name="__codelineno-0-382"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">]:</span> <span class="o">...</span>  <span class="c1"># pragma: no cover</span>
-<a id="__codelineno-0-383" name="__codelineno-0-383"></a>
-<a id="__codelineno-0-384" name="__codelineno-0-384"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span>
-<a id="__codelineno-0-385" name="__codelineno-0-385"></a>        <span class="n">prompt</span><span class="p">:</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">],</span>
-<a id="__codelineno-0-386" name="__codelineno-0-386"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">]:</span>
-<a id="__codelineno-0-387" name="__codelineno-0-387"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Updates the `metadata` class attribute to the given value.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-388" name="__codelineno-0-388"></a>        <span class="nb">setattr</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="s2">&quot;_metadata&quot;</span><span class="p">,</span> <span class="n">metadata</span><span class="p">)</span>
-<a id="__codelineno-0-389" name="__codelineno-0-389"></a>        <span class="k">return</span> <span class="n">prompt</span>
-<a id="__codelineno-0-390" name="__codelineno-0-390"></a>
-<a id="__codelineno-0-391" name="__codelineno-0-391"></a>    <span class="k">return</span> <span class="n">inner</span>
+<a id="__codelineno-0-381" name="__codelineno-0-381"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span>
+<a id="__codelineno-0-382" name="__codelineno-0-382"></a>        <span class="n">prompt</span><span class="p">:</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">],</span>
+<a id="__codelineno-0-383" name="__codelineno-0-383"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">type</span><span class="p">[</span><span class="n">_BasePromptT</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="n">_P</span><span class="p">,</span> <span class="n">_R</span><span class="p">]:</span>
+<a id="__codelineno-0-384" name="__codelineno-0-384"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Updates the `metadata` class attribute to the given value.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-385" name="__codelineno-0-385"></a>        <span class="n">prompt</span><span class="o">.</span><span class="n">_metadata</span> <span class="o">=</span> <span class="n">metadata</span>  <span class="c1"># pyright: ignore [reportAttributeAccessIssue,reportFunctionMemberAccess]</span>
+<a id="__codelineno-0-386" name="__codelineno-0-386"></a>        <span class="k">return</span> <span class="n">prompt</span>
+<a id="__codelineno-0-387" name="__codelineno-0-387"></a>
+<a id="__codelineno-0-388" name="__codelineno-0-388"></a>    <span class="k">return</span> <span class="n">inner</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -5138,7 +5225,7 @@ attribute of the decorated input prompt or call.</p>
     <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "content.code.link", "navigation.footer", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.471ce7a9.min.js"></script>
       
     
   </body>
